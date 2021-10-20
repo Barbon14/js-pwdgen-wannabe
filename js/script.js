@@ -9,5 +9,8 @@ const cognome = prompt("Qual è il tuo cognome?");
 // chiedo all'utente il colore preferito
 const colore = prompt("Qual è il tuo colore preferito?");
 
+// creo una variabile unica per i tre valori
+const passwordGenarata = nome + cognome + colore + "21"
+
 // scrivo in pagina la password generata
-document.getElementById("password").innerHTML = `La password assegnata è ${nome}${cognome}${colore}21`;
+document.getElementById("password").innerHTML = `La password assegnata è ${passwordGenarata}`;
